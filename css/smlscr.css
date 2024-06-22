@@ -1,0 +1,514 @@
+@media all and (max-width: 399px) {
+
+	main{
+		display: flex;
+    	flex-direction: column;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 15px !important;
+	}
+
+	#HeadlineWrapper{
+		justify-content: center;
+		margin-bottom: 15% !important;
+	}
+
+	#HeadlineWrapper > span:first-child{
+		font-size: 1.4em;
+	}
+
+	#HeadlineWrapper > span:nth-child(2){
+		width: 100%;
+		margin: 3% 0;
+		font-size: 1.2em;
+	}
+
+	.HeadlineUsername { /* ПОЛЕ ЗА ПОТРЕБИТЕЛ */	
+    	width: 100% !important;		
+	}
+
+	#HeadlineWrapper > img{
+		width: 98%;
+	}
+
+	#potr > span{
+		font-size: 1.2em !important;
+	}
+
+	.btnFn.header{
+		visibility: hidden;
+	}
+
+	#izh.btnFn.header.new{
+		display: block;
+		visibility: visible !important;
+		width: 70%;
+		margin: 25px auto;
+		font-size: 22px;
+		height: 14%;
+		padding: 10px 15px;
+	}
+
+	.leftScreen {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 0;
+		width: 100%;
+		align-items: center;
+		order: 3
+	}
+
+	.leftScreen > img {  	 
+		display: none;	
+	}
+
+	.menuIndex{
+		display: flex; 
+		flex-direction: column;
+		flex: 1 0 auto;		
+		box-sizing: border-box;
+		box-shadow: 2px 2px 8px 3px rgba(0,0,0,.1);
+		margin-top: 30px !important;
+		padding-bottom: 150px;
+		width: 100%;
+		order: 2;
+	}
+
+	.menuIndex > ul{
+		text-align: center;
+		margin: auto;
+		width: 90%;
+	}
+
+	.TXT { 
+		font-size: 2.4em;
+	}
+
+	.logspace{
+		order: 1;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.logspace > p:first-child{
+		font-size: 2.5em;
+    	line-height: 2;
+	}
+
+	.logspace > p:nth-child(2){
+		font-size: 1.5em;
+	}
+
+	#sps > form > div:nth-child(2),
+	.logspace > form > div:first-child,
+	.logspace > form > div:nth-child(2){
+    	font-size: 1.7em;
+		text-align: center;
+	}
+
+	.btnFn.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+		font-size: 22px;
+		height: 14%;
+		width : 45%; 
+	}	
+	
+	#usname, #psw{
+		width: 90%;
+	}
+}
+
+@media all and (min-width: 399px) and (max-width: 661px) {
+	#HeadlineWrapper > img{
+		display: none;
+	}
+
+	main {
+		padding-bottom: 7%;
+		box-shadow: -2px -2px 8px 3px rgba(0,0,0,.1);
+		height: 60em;
+	}
+
+	#HeadlineWrapper{
+		justify-content: space-between;
+	}
+
+	#HeadlineWrapper > span:first-child{
+		width: 25%;
+		margin-left: 1%;		
+	}
+
+	#HeadlineWrapper > span:nth-child(2){
+		width: 5%;
+	}
+
+	.HeadlineUsername{
+		word-wrap: break-word;
+		width: 20%;
+		margin-left: 35px;
+	}
+
+	#izh.btnFn.header.new{
+		display: none;
+	}
+
+	.btnFn {   
+		font: var(--btn-font);
+		padding: 5px 15px;
+	}
+
+	.leftScreen {  
+		display: flex;
+		flex-direction: column;
+		width: 55%;				
+		height: 65%;	
+		position: relative;
+		top: 262px; left: 40px;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.leftScreen > img{
+		position: relative;
+		z-index: 1000;
+		margin: auto;
+	}
+
+	.logspace{
+		margin: auto;
+		position: relative;
+		bottom: 64%; left: 10%;
+		width: 70%;
+		padding: 20px 0;
+	}
+
+	.logspace > p {
+		line-height: 1.5em;
+		text-align: center;
+	}
+
+	.logspace > p:first-child {
+    	font-size: 1.5em;
+	}
+
+	.logspace > p:nth-child(2) {
+    	font-size: 1.13em;
+	}
+	
+	 #sps > form > div:nth-child(2),
+	.logspace > form > div:first-child,
+	.logspace > form > div:nth-child(2){
+    	font-size: 1.2em;
+		padding: 0 20px;
+	}
+	
+	.logspace > form > div:nth-child(4){
+		margin-top: 20px;
+	}
+
+	.menuIndex{
+		margin: auto;
+		width: 90%;
+		margin-top: 0;
+	}
+
+	#usname, #psw{
+    	width: 90%;
+		margin-top: 5px;
+	}
+
+	.btnFn.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+		font-size: 20px;
+		height: 12%;
+		margin: 0 105px;
+	}
+	
+	.TXT{
+		font-size: 1.5em;
+	}
+}
+
+@media all and (min-width: 661px) and (max-width: 887px) {
+
+	#HeadlineWrapper > img{
+		display: none;
+	}
+
+	main {
+		background: transparent;
+		box-shadow: -2px -2px 8px 3px rgba(0,0,0,.1);
+		width: 100%;
+	}
+
+	#HeadlineWrapper{
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+
+	#HeadlineWrapper > span:nth-child(1){
+		word-wrap: break-word;
+		width: 30% !important;
+	}
+
+	.menuIndex{
+		width: 85%;
+		margin-left: 13%;
+	}
+
+	.leftScreen { 
+		position: absolute;
+		top: 25px; left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 130px;
+		text-align: center;
+		padding-bottom: 2%;
+	}
+
+	.leftScreen > img{
+		position: relative;
+		top: 43%;
+		right: 25%;
+	} 
+
+	ul{
+		display: flex;
+		flex-direction: row; 
+		padding: 2% 4%;	
+		padding-right: 0 !important;
+	}
+
+	.leftScreen > img{
+		width: 15% !important;
+	} 
+
+	.TXT { 
+		font-size: 1.7em;    		
+	}
+
+	.btnFn.menu{
+		margin: auto 5px !important;
+		width: 24% !important;
+	}
+
+	.logspace {	/* екран за логване  */
+		position: absolute;	 
+		left: 20%; top: 33%;
+		z-index: 100; 
+		height: 260px;
+		width : 60%;
+		font-size: 16px;
+		padding: 15px 0;
+	}
+
+	.logspace > form{
+		width: 80%;
+	}
+
+	.logspace > p:first-child {
+    	font-size: 1.6em;
+		padding-bottom: 10px;
+	}
+
+	.logspace > p:nth-child(2) {
+		font-size: 1.1em;
+	}
+	
+	.logspace > form > div:first-child,
+	.logspace > form > div:nth-child(2){
+    	font-size: 1.4em !important;
+	}
+	
+	.logspace > form > div:nth-child(4){
+		text-align: center;
+		margin-top: -10px;
+	}
+
+	#usname, #psw{
+    	width: 100%;
+	}
+
+	.btnFn.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+		font-size: 18px !important;
+		height: 12%;
+		width : 20%; 
+	}	
+
+	#izh.btnFn.header.new{
+		display: none;
+	}
+
+	footer{
+		position: absolute;
+    	bottom: 0px
+	}	
+}
+
+@media all and (min-width: 887px) and (max-width: 1055px) {
+
+	#HeadlineWrapper > img{
+		display: none;
+	}
+
+	#HeadlineWrapper{
+		justify-content: space-between;
+	}
+
+	.btnFn {   
+		font: var(--btn-font);
+	}
+
+	.leftScreen{
+		width: 25%;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 30px;
+		position: relative;
+    	left: 5%;
+    	margin-top: 5%;
+	}
+
+	#izh.btnFn.header.new{
+		display: none;
+	}
+
+	.TXT { 
+		font-size: 18px;    		
+	}
+
+	.menuIndex{
+		width: 90%;
+		margin: auto;
+	}
+
+	.logspace {	/* екран за логване  */
+		position: absolute;	 
+		left: 30%; top: 20%;
+		z-index: 100; 
+		height: 290px;
+		width : 50%;
+		font-size: 16px;
+	}	
+
+	.logspace > form {
+		width: 90%;
+	}
+
+	.logspace > p {
+		line-height: 1.8em;
+	}
+
+	.logspace > p:first-child {
+    	font-size: 1.5em;
+		text-align: center;
+	}
+
+	.logspace > p:nth-child(2) {
+    	font-size: 1.1em;
+		text-align: center;
+	}
+	
+	.logspace > form > div,
+	.logspace > form > div:nth-child(2){
+		font-size: 1.2em !important;
+		width: 100%;
+	}
+
+	.logspace > form > div:nth-child(4){
+		text-align: center;
+	}
+
+	#usname, #psw{
+		width: 80%;
+		margin-right: 15%;
+		padding: 0 15px;
+	}
+	
+	.btnFn.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+		font-size: 26px;
+	}	
+
+	footer{
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+@media all and (min-width: 1055px) and (max-width: 1600px) {
+
+	#HeadlineWrapper > img{
+		display: none;
+	}
+
+	#HeadlineWrapper{
+		justify-content: space-between;
+		padding: 0 30px;
+	}
+
+	#izh.btnFn.header.new{
+		display: none;
+	}
+	
+	main {
+		height: 28.5em;
+	}
+
+	.leftScreen{
+		width: 20%;
+		text-align: center;
+		padding: 20px 0;
+		position: relative;
+    	left: 5%;
+    	margin-top: 5%;
+	}
+
+	.menuIndex{
+		width: 90%;
+		margin: auto;
+	}
+
+	.logspace {	/* екран за логване  */
+		position: absolute;	 
+		left: 28%; top: 35%;
+		z-index: 100; 
+		height: 290px;
+		width : 45%;
+		font-size: 18px;
+		padding-bottom: 20px;
+	}	
+
+	.logspace > form{
+		width: 90%;
+	}
+
+	.logspace > p {
+		line-height: 2em;
+	}
+	
+	.logspace > p:first-child {
+		font-size: 2.3em;
+	}
+	
+	.logspace > p:nth-child(2) {
+		font-size: 1.3em;
+	}
+	
+	.logspace > form > div:first-child,
+	.logspace > form > div:nth-child(2){
+		font-size: 1.2em;
+		text-align: end;
+	}
+
+	.logspace > form > div:nth-child(4){
+		text-align: center;
+	}
+
+	#usname, #psw{
+		width: 220px;
+	}
+	
+	.btnFn.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+    	font-size: 22px;
+	}	
+}

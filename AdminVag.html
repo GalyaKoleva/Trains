@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/index2.css">
+	<title>AdminVag</title>
+</head>
+
+<body>
+	<header>  
+		<!-- <img src="./Pics/Vag1 (1).jpg"></header></img> -->
+		<!--  ------------------  ЛЕНТА СЪС ЗАГЛАВИЕ -------------------  -->
+		<div id="HeadlineWrapper">
+			<span>"БДЖ ПЪТНИЧЕСКИ ПРЕВОЗИ" ЕООД</span>
+			<span>ВАГОНИ</span>
+				<form id="form" name="form" action="<?php $self ?>" method="post">     <!--  ФОРМА  -->	</form>	 
+				<div class="HeadlineUsername" name="potr" id="potr"> 
+				<span class="user">Потребител: Име на потребителя <!--?php  echo($ime); ?--> &nbsp;&nbsp;</span> 
+				</div>
+        	<input class="btnFn header" type="submit" name="action" id="izh" value="Изход" title="Изход">
+			<img src="./Pics/linia2.jpg" alt="linia2">
+		</div>
+    </header>
+
+        <!-- ********************************************************* ОСНОВЕН ЕКРАН *******************************************************-->	
+    <main> 
+	        <!-- *************************************************** Лява част - Бутони в първото ляво поле*******************************************************	-->
+        <aside class="leftScreen"> <!--Полето в ляво <!-- /* САЙДБАР 1 */    -->
+            <img src="./Pics/linia2.jpg" alt="linia2">
+            
+	        <nav class="menuIndex">   <!--Менюто с бутони  <!-- /* МЕНЮ 1 */  -->	
+				<span class="TXT"> Обработка на данни </span>
+				<ul>
+                	<li class="btnFn menu"><a href="./ParkVag.html">"Парк"</a></li>
+					<li class="btnFn menu"><a href="RemVag.html">"Ремонти"</a></li>
+                    <li class="btnFn menu"><a href="Vagons.html">"Справки"</a></li>   
+					<li class="btnFn menu"><a href="./toPark.html">"Служебен"</a></li>
+			    </ul>
+				<input class="btnFn header new" type="submit" name="action" id="izh" value="Изход" title="Изход">
+			</nav>
+		</aside>
+	           
+        	<!-- *************************************************** Форма за Вход *******************************************************	-->
+        	
+	    <!--?php if ($kod <= 0) { ?-->  <!-- Няма логване -->
+		<section class="logspace" id="sps"> 
+			<p>ВХОД В СИСТЕМАТА</p>
+			<p>МОЛЯ, ПОПЪЛНЕТЕ ВСИЧКИ ПОЛЕТА!</p> 
+			<form>		
+			<div><label for="usname"><i>Потребителско име:</i></label> 					
+				<input type="text" id="usname" name="usname" autofocus="" onkeydown="javascript: var key = event.keyCode || event.charCode || event.which ; 
+				userPressed(key); " value="<?php echo(trim($user))?>" required="">
+			</div>		
+			<div><label for="psw"><i>Парола:</i></label>	
+				<input type="password" id="psw" name="psw" onkeydown="javascript: var key = event.keyCode || event.charCode || event.which ; passPressed(key);
+				" value="<?php echo(trim($pass))?>" required />
+			</div>
+			<div> 
+				<span class="tred"><!--?php echo($logErr)?--></span>	
+			</div>
+			<div>
+				<input class="btnFn btnIn" type="submit" name="action" id="pass" value="ВХОД">
+			</div> 
+			</form>	
+		</section>  <!--logspace--> 
+	
+	        <!-- *************************************************** Дясна част *******************************************************-->
+        <aside id="rightScreen">   <!--ДЯСЕН КОНТЕЙНЕР Общ  <!--  ДЯСНА ЧАСТ    -->         
+           <!-- <img src="Pics/Vag10.jpg"></img> -->
+		</aside> 
+    </main>
+	<footer id="footer">
+	</footer>
+    <!--?php
+	//mysql_close($connect);
+    ?-->    
+ 
+</body>
+</html>

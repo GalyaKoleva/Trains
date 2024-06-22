@@ -1,0 +1,850 @@
+@import url('typography.css');
+@import url('variables.css');
+/* @import url('smlscr.css');  */
+/*------------------------------------------------*/
+/*Парк*/
+/*------------------------------------------------*/
+
+html, main{
+	background: #A7DEFD;
+}
+
+main{
+	background: #A7DEFD;
+	margin-bottom: 30px;
+}
+
+header > img {
+	width: 100%;
+}
+
+#HeadlineWrapper{
+	display: grid;
+	grid-template-columns: 25% 25% 40%;
+	grid-gap: 3%;
+	width: 100% 
+}
+
+.HeadlineUsername {
+	display: flex;
+	flex-direction: row;
+}
+
+.user{
+	margin-right: 10%;
+	margin-top: 5%;
+}
+
+.HeadlineUsername > img{
+	width: 30%;
+}
+
+#formline{
+	flex-wrap: wrap;
+}
+
+.FormLineWrapper {
+	padding: 0 20px;
+	width: 26%;
+}
+
+.partFormPark1 { /*  Контейнери в Лента */
+	display: flex;
+	flex-direction: column; 				
+	border-style: ridge; 
+	height: 5.8em;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 30%;
+    height: 25px;
+}
+
+.partFormPark1 > div{
+	line-height: 2em;
+}
+
+.partFormPark2{
+	display: grid;
+	grid-template-columns: 16% 16% 16% 16% 16% 16%;
+	grid-template-rows: 50px 50px 50px;
+	width: 50%;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 30%;
+    height: 25px;
+}
+
+.Vagon {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+    margin-right: 4%;
+}
+
+.Vagon > input[type=text]{
+	height: 15%;
+}
+
+.buttonFnContainer{
+	display: flex;
+    flex-direction: column;
+	width: 17%;
+	padding-right: 15px;
+	align-items: baseline;
+}
+
+
+#NewformLineZap > div.buttonFnContainer > input,
+#formline > div.buttonFnContainer > a > button,
+#formline > div.buttonFnContainer > input,
+#NewformLineZap > div.buttonFnContainer > input:nth-child(2),
+#btnExport, #btnZapis{
+    	height: 50px;
+		width: 150px;
+}
+
+.buttonFnContainer > input[type=submit]{
+	margin-top: 20px;
+}
+
+.buttonFnContainer > a{
+	margin-top: 20px;
+}
+
+#btnExport{
+	margin-top: 20px;
+}
+
+#formline {
+	display: flex;
+	flex-direction: row;
+}
+
+#NewformLineZap{
+	background-color: #39c8fe;
+	box-shadow:-2px -2px 8px 3px rgba(0,0,0,.1);
+	color: #00569a; 
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	font-weight: 700;
+	word-wrap: break-word;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+	grid-template-rows: 50px 50px;
+	grid-gap: 1.1%;
+	row-gap: 35px;
+	width: 100%;
+	margin-left: 15px;
+	align-items: self-end;
+}
+
+.wrapper > div > input[type=text]{
+	width: 95%;
+    height: 35px;
+}
+ 
+#bottomScreen { 	/*  ОСНОВЕН ЕКРАН */ /* background-color:#fcba03; 00569A border:2px solid BLUE; */	
+	 box-shadow: -2px -2px 8px 3px rgba(0,0,0,.1); 
+	 height: 30%; 
+	 overflow: auto; 
+	 padding: 0 15px;
+	 overflow: scroll;
+} 
+
+.bottomName {	/* ЗАГЛАВИЕ */ /* background-color:#ffffff; border:2px solid GREEN;	*/
+	color: #2742d1; 
+	font-family: "Times New Roman", Times, serif; 
+	font-size: 1.9vw;
+	font-weight: 900; 
+	height: auto; 
+	margin: 0px;	
+	text-align: center;
+}
+
+#DataTableId{
+	table-layout: fixed;
+	width: 280%;
+}
+
+thead th {
+	font-size: 18px;
+	word-wrap: break-word;
+	font-weight: 900;
+	text-align: center;
+	color: black;
+}
+
+tbody td {
+	font-size: 16px;
+	word-wrap: break-word;
+	color: black;
+	text-align: center;
+}
+
+thead th:nth-child(1) {
+	width: 2%;
+}
+
+thead th:nth-child(4),
+thead th:nth-child(5),
+thead th:nth-child(12),
+thead th:nth-child(13),
+thead th:nth-child(14),
+thead th:nth-child(24),
+thead th:nth-child(25),
+thead th:nth-child(27){
+	width: 6%;
+}
+
+thead th:nth-child(6),
+thead th:nth-child(15),
+thead th:nth-child(16),
+thead th:nth-child(21){
+	width: 8%;
+}
+
+thead th:nth-child(2),
+thead th:nth-child(3),
+thead th:nth-child(7),
+thead th:nth-child(18),
+thead th:nth-child(28),
+thead th:nth-child(29){
+	width: 10%;
+}
+
+thead th:nth-child(8),
+thead th:nth-child(9),
+thead th:nth-child(10),
+thead th:nth-child(11),
+thead th:nth-child(17),
+thead th:nth-child(19),
+thead th:nth-child(20),
+thead th:nth-child(22),
+thead th:nth-child(23),
+thead th:nth-child(26){
+	width: 12%;
+}
+
+footer{
+	background: black;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+@media all and (min-width: 150px) and (max-width: 284px) {
+	#HeadlineWrapper{
+		font-size: 8px;
+		grid-template-columns: 32% 27% 34%;
+		grid-gap: 1%;
+	}
+
+	#formline{
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	.FormLineWrapper {
+    	padding: 0 10px !important;
+		margin-top: 0 !important;
+		width: 100% !important;
+	}
+
+	input[type=checkbox] {
+		width: 10%;
+		height: 10px;
+	}
+
+	.FormLineWrapper > div{
+		width: 52%;
+	}
+
+	.partFormPark2{
+		display: grid;
+		grid-template-columns: 20% 20% 19% 19% 20%;
+		grid-template-rows: 35px 35px 35px;
+		grid-gap: 0.2%;
+		width: 100%;
+		margin: 25px 0;
+		margin-left: 5px;
+	}
+
+	input[type=radio] {
+		height: 10px;
+	}
+
+	.Vagon{
+		width: 35%;
+    	position: relative;
+    	bottom: 230px;
+    	left: 140px;
+		margin-right: 0 !important;
+	}
+
+	.Vagon > input[type=text]{
+		height: 40%;
+	}
+	
+	.buttonFnContainer{
+		flex-direction: row;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	#formline > div.buttonFnContainer{
+		margin-top: -40px;
+	}
+
+	#formline > div.buttonFnContainer > input{
+		margin-right: 7px;
+	}
+
+	.btnFn.Export{
+		margin: 0 !important;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	#NewformLineZap > div.buttonFnContainer > input,
+	#formline > div.buttonFnContainer > input,
+	#NewformLineZap > div.buttonFnContainer > input:nth-child(2),
+	#btnExport, #btnZapis{
+		font-size: 11px;
+    	height: 25px;
+    	width: 80px;
+	}
+
+	.buttonFnContainer > input[type=submit]{
+		margin-top: 10px;
+	}
+	
+	#btnZapis,
+	#btnExport{
+		margin-left: 5px;
+    	margin-right: 10px;
+	}
+
+	#formline > div.buttonFnContainer > a > button{
+		position: relative;
+    	bottom: 200px;
+    	right: -8px;
+		font-size: 11px;
+    	height: 25px;
+    	width: 78px;
+	}
+
+	#NewformLineZap{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.wrapper{
+		grid-template-columns: 25% 25% 22% 22%;
+    	grid-template-rows: 50px 50px 50px 50px;
+    	row-gap: 8px;
+    	width: 100%;
+    	margin-left: 5px;
+    	align-items: self-end;
+	}
+
+	.wrapper > div{
+		line-height: 1.3rem;
+	}
+
+	.wrapper > div > input[type=text]{
+		width: 85%;
+		height: 20px;
+	}
+
+	.bottomName {
+		font-size: 5.6vw;
+	}
+
+	#DataTableId{
+		table-layout: fixed;
+		width: 1900%;
+		padding-bottom: 30px;
+	}
+
+	thead th {
+		height: 25px;
+		font-size: 16px;
+	}
+
+	tbody td {
+		height: 30px;
+		font-size: 14px;
+	}
+}
+
+@media all and (min-width: 284px) and (max-width: 310px) {
+
+	#HeadlineWrapper{
+		font-size: 8px;
+		grid-template-columns: 32% 27% 34%;
+		grid-gap: 1%;
+	}
+
+	#formline{
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	.FormLineWrapper {
+    	padding: 0 10px !important;
+		margin-top: 0 !important;
+		width: 100% !important;
+	}
+
+	input[type=checkbox] {
+		width: 10%;
+		height: 10px;
+	}
+
+	.FormLineWrapper > div{
+		width: 52%;
+	}
+
+	.partFormPark2{
+		display: grid;
+		grid-template-columns: 20% 20% 19% 19% 20%;
+		grid-template-rows: 35px 35px 35px;
+		grid-gap: 0.2%;
+		width: 100%;
+		margin: 25px 0;
+		margin-left: 5px;
+	}
+
+	input[type=radio] {
+		height: 10px;
+	}
+
+	.Vagon{
+		width: 35%;
+    	position: relative;
+    	bottom: 230px;
+    	left: 160px;
+	}
+
+	.Vagon > input[type=text]{
+		height: 40%;
+	}
+	
+	.buttonFnContainer{
+		flex-direction: row;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	#formline > div.buttonFnContainer{
+		margin-top: -40px;
+	}
+
+	#formline > div.buttonFnContainer > input{
+		margin-right: 7px;
+	}
+
+	.btnFn.Export{
+		margin: 0 !important;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	#NewformLineZap > div.buttonFnContainer > input,
+	#formline > div.buttonFnContainer > input,
+	#NewformLineZap > div.buttonFnContainer > input:nth-child(2),
+	#btnExport, #btnZapis{
+		font-size: 11px;
+    	height: 25px;
+    	width: 80px;
+	}
+
+	.buttonFnContainer > input[type=submit]{
+		margin-top: 10px;
+	}
+	
+	#btnZapis,
+	#btnExport{
+		margin-left: 5px;
+    	margin-right: 10px;
+	}
+
+	#formline > div.buttonFnContainer > a > button{
+		position: relative;
+    	bottom: 200px;
+    	right: 6px;
+		font-size: 11px;
+    	height: 25px;
+    	width: 78px;
+	}
+
+	#NewformLineZap{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.wrapper{
+		grid-template-columns: 25% 25% 22% 22%;
+    	grid-template-rows: 50px 50px 50px 50px;
+    	row-gap: 8px;
+    	width: 100%;
+    	margin-left: 5px;
+    	align-items: self-end;
+	}
+
+	.wrapper > div{
+		line-height: 1.3rem;
+	}
+
+	.wrapper > div > input[type=text]{
+		width: 85%;
+		height: 20px;
+	}
+
+	.bottomName {
+		font-size: 5.6vw;
+	}
+
+	#DataTableId{
+		table-layout: fixed;
+		width: 1900%;
+	}
+
+	thead th {
+		height: 25px;
+		font-size: 16px;
+	}
+
+	tbody td {
+		height: 30px;
+		font-size: 14px;
+	}
+}
+
+@media all and (min-width: 310px) and (max-width: 551px) {
+	#formline{
+		margin-bottom: 20px;
+	}
+
+	.FormLineWrapper {
+    	padding: 0 10px !important;
+		width: 20% !important;
+		margin-top: 25px;
+	}
+
+	.partFormPark1{
+		height: 8.8rem;
+	}
+
+	input[type=checkbox] {
+		border: 0px;
+		width: 10%;
+		height: 10px;
+	}
+
+	.partFormPark2{
+		display: grid;
+		grid-template-columns: 19% 19% 19% 19% 19%;
+		grid-template-rows: 35px 35px 35px;
+		grid-gap: 0.2%;
+		width: 70%;
+		margin: 25px 0;
+	}
+
+	input[type=radio] {
+		height: 10px;
+	}
+
+	.Vagon{
+		width: 40%;
+		margin: 0 4% !important;
+		text-align: center;
+	}
+
+	.Vagon > input[type=text]{
+		height: 40%;
+	}
+
+	.buttonFnContainer{
+		flex-direction: row;
+		width: 85%;
+	}
+
+	#NewformLineZap{
+		word-wrap: break-word;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.wrapper{
+		grid-template-columns: 17% 17% 18% 20% 22%;
+		grid-template-rows: 50px 50px 50px;
+		row-gap: 8px;
+		width: 100%;
+		margin-left: 5px;
+		align-items: self-end;
+	}
+
+	.wrapper > div > input[type=text]{
+		width: 85%;
+		height: 20px;
+	}
+	
+	#formline > div.buttonFnContainer > input{
+		margin-right: 7px;
+		margin-left: 20px;
+	}
+
+	#formline > div.buttonFnContainer > a > button,
+	#formline > div.buttonFnContainer > input,
+	#NewformLineZap > div.buttonFnContainer > input,
+	#NewformLineZap > div.buttonFnContainer > input:nth-child(2),
+	#btnExport, #btnZapis{
+		font-size: 14px;
+    	height: 30px;
+		width: 100px;
+	}
+
+	.buttonFnContainer{
+		margin: 10px 0;
+	}
+
+	#formline > div.buttonFnContainer > a > button{
+		margin-left: 7px;
+		width: 77px;
+	}
+
+	.buttonFnContainer > input[type=submit]{
+		margin-top: 10px;
+	}
+	
+	#btnZapis,
+	#btnExport{
+		margin: 0 25px;
+	}
+
+	.btnFn.Export{
+		margin: 0 !important;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	#formline > #smlBTN  {
+	display: none;
+	visibility: hidden;
+	position: relative;
+	z-index: -999;
+	}
+
+	.bottomName {
+		font-size: 3.6vw;
+	}
+
+	#DataTableId{
+		table-layout: fixed;
+		width: 950%;
+	}
+
+	thead th {
+		height: 30px;
+		font-size: 16px;
+	}
+
+	tbody td {
+		height: 40px;
+		font-size: 14px;
+	}
+}
+
+@media all and (min-width: 551px) and (max-width: 985px) {
+
+	.FormLineWrapper {
+    	padding: 0 10px !important;
+		font-size: 15px;
+		width: 28% !important;
+		margin-top: 25px;
+	}
+
+	.partFormPark1{
+		height: 6.5rem;
+	}
+
+	input[type=checkbox] {
+		border: 0px;
+		width: 20%;
+		height: 20px;
+	}
+
+	.partFormPark2{
+		display: grid;
+		grid-template-columns: 19% 19% 19% 19% 19%;
+		grid-template-rows: 35px 35px 35px;
+		width: 51%;
+		margin: 25px 0;
+	}
+
+	input[type=radio] {
+		border: 0px;
+		width: 33%;
+		height: 20px;
+	}
+	
+	.Vagon {
+		margin-top: 25px;
+		width: 13% !important;
+	}
+
+	#NewformLineZap{
+		color: black;
+    	font-weight: 700;
+		word-wrap: break-word;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.wrapper{
+		grid-template-columns: 15% 14% 15% 14% 14% 14% 14%;
+		grid-template-rows: 50px 50px;
+		grid-gap: 0%;
+		row-gap: 22px;
+		width: 100%;
+		margin-left: 5px;
+		align-items: self-end;
+		margin-bottom: 20px;
+	}
+
+	.wrapper > div > input[type=text]{
+		width: 85%;
+		height: 25px;
+	}
+
+	.buttonFnContainer{
+		width: 13%;
+		flex-direction: row;
+		margin-bottom: 3%;
+		width: 100% !important;
+	}
+
+	#NewformLineZap > div.buttonFnContainer > input,
+	#formline > div.buttonFnContainer > a > button,
+	#formline > div.buttonFnContainer > input,
+	#NewformLineZap > div.buttonFnContainer > input:nth-child(2),
+	#btnExport, #btnZapis{
+		font-size: 14px;
+    	height: 40px;
+		width: 100px;
+	}
+
+	#formline > div.buttonFnContainer > input{
+    	margin: 0 25px;
+	}
+
+	#formline > div.buttonFnContainer > #btnExport{
+		margin-left: 0px !important;
+	}
+
+	.buttonFnContainer > input[type=submit]{
+		margin-top: 10px;
+	}
+	
+	#btnZapis,
+	#btnExport{
+		margin: 0 25px;
+	}
+
+	.bottomName {
+		font-size: 2.6vw;
+	}
+
+	#DataTableId{
+		table-layout: fixed;
+		width: 500%;
+	}
+
+	thead th {
+		height: 40px;
+		font-size: 16px;
+	}
+
+	tbody td {
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
+@media all and (min-width: 985px) and (max-width: 2200px) {
+
+	#HeadlineWrapper{
+		font-size: 30px;
+		display: grid;
+		grid-template-columns: 26% 26% 40%;
+		width: 100%;
+	}
+
+	#HeadlineWrapper > span:nth-child(2){
+		width: 85%;
+		margin-left: 14%;
+	}
+
+	#potr > span{
+		margin-left: 40px;
+	}
+
+	.FormLineWrapper,
+	.partFormPark2 {
+    	position: relative !important;
+    	top: 65px !important;
+	}
+
+	.Vagon > input{
+		font-size: 18px;
+	}
+
+	#formline > .buttonFnContainer{
+    	position: relative !important;
+    	left: 80% !important;
+    	bottom: 100px !important;
+	}
+	
+	.buttonFnContainer:nth-child(2){
+		flex-direction: row !important;
+		width: 51%;
+		margin-left: 40px;
+	}
+
+	.buttonFnContainer > input,
+	.buttonFnContainer > button{
+		margin-right: 40px;
+	}
+
+	.wrapper > div > input[type=text]{
+		font-size: 18px;
+	}
+
+	#DataTableId{
+		table-layout: fixed;
+		width: 350%;
+		padding-bottom: 30px;
+	}
+
+	thead th {
+		height: 40px;
+		font-size: 22px;
+	}
+
+	tbody td {
+		height: 40px;
+		font-size: 20px;
+	}
+}

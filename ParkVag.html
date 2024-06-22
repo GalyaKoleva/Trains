@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./css/park.css">
+	<title>Park</title>
+</head>
+
+<body> 
+	<header>
+		<img src="./Pics/Vag1 (1).jpg">
+	
+	    
+	    <form id="form" name="form" action="<?php $self ?>" method="post">    
+	    
+	    <!--  ------------------  ЛЕНТА СЪС ЗАГЛАВИЕ -------------------  --> 
+	    <div id="HeadlineWrapper">  
+        	<span>"БДЖ-ПЪТНИЧЕСКИ ПРЕВОЗИ" ЕООД</span>
+            <span>ПАРК НА ВАГОНИТЕ НА "БДЖ-ПП" ЕООД</span>
+			<form id="form" name="form" action="<?php $self ?>" method="post">    </form>	 
+        	<div class="HeadlineUsername" name="potr" id="potr">
+			<span class="user">Потребител: Име на потребителя <!--?php  echo($ime); ?--> </span>
+			<img src="./Pics/linia2.jpg" alt="linia2">
+		</div>
+	</header>
+		
+	<main>
+        <!-- ******************** Форма за заявка *********************** -->
+        <div id="formline">  <!--Форма с 2 реда -->
+             <!-- <script language='javascript'> hidepass(); </script>   </div>  -->
+        	<div class="FormLineWrapper"> 
+        	<div class="partFormPark1">                    
+         		<div><input type="checkbox" name="eex" value=" checked">
+        			 <label for="eex"> София </label></div> 
+        		<div><input type="checkbox" name="rem" value=" checked">
+        			 <label for="rem"> Горна Оряховица </label></div> 
+        		<div><input type="checkbox" name="drg" value=" checked">
+        			 <label for="drg"> Пловдив </label></div> 
+        	</div>  <!-- partFormPark1 --> 
+			</div>
+        		
+    	<div class="partFormPark2">
+    		<div><input type="radio" name="gender" value="A4" id="a4">  <label for="a4">A4</label></div>
+    		<div><input type="radio" name="gender" value="AB4" id="ab4"><label for="ab4">AB4</label></div> 
+			<div><input type="radio" name="gender" value="ARK" id="ark"><label for="ark">ARK</label></div>
+			<div><input type="radio" name="gender" value="B4" id="b4">  <label for="b4">B4</label></div>
+    		<div><input type="radio" name="gender" value="BC4" id="bc4"><label for="bc4">BC4</label></div>
+			<div><input type="radio" name="gender" value="BDS" id="bds"><label for="bds">BDS</label></div>
+    	
+			<div><input type="radio" name="gender" value="BHM" id="bhm"><label for="bhm">BHM</label></div>
+			<div><input type="radio" name="gender" value="BIM" id="bim"><label for="bim">BIM</label></div>
+			<div><input type="radio" name="gender" value="BME" id="bme"><label for="bme">BME</label></div>
+			<div><input type="radio" name="gender" value="BMP" id="bmp"><label for="bmp">BMP</label></div>
+			<div><input type="radio" name="gender" value="BMZ" id="bmz"><label for="bmz">BMZ</label></div>
+			<div><input type="radio" name="gender" value="BY" id="by">  <label for="by">BY</label></div>
+    	
+			<div><input type="radio" name="gender" value="D4" id="d4">   <label for="d4">D4</label></div>
+			<div><input type="radio" name="gender" value="S" id="ss">    <label for="ss">S</label></div>
+			<div><input type="radio" name="gender" value="WL4" id="wl4"> <label for="wl4">WL4</label></div>
+			<div><input type="radio" name="gender" value="WR4" id="wr4"> <label for="wr4">WR4</label></div>
+			<div><input type="radio" name="gender" value="" id="all">    <label for="all">All</label></div>
+    	</div>  <!--  partFormPark2 --> 
+					
+		<!-- <div class="partFormPark2">
+    		<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s1")  echo "checked";?> value="A4">A4 &nbsp;&nbsp;&nbsp; </div> 
+    		<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s2")  echo "checked";?> value="AB4">AB4</div> 
+    		<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s3")  echo "checked";?> value="ARK">ARK</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s4")  echo "checked";?> value="B4">B4 &nbsp; &nbsp;</div> 
+    		<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s5")  echo "checked";?> value="BC4">BC4&nbsp;</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s6")  echo "checked";?> value="BDS">BDS</div> 
+    	</div>  
+    	<div class="partFormPark2"> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s7") echo "checked";?> value="BHM">BHM</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s8") echo "checked";?> value="BIM">BIM</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s9") echo "checked";?> value="BME">BME</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s10") echo "checked";?> value="BMP">BMP</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s11") echo "checked";?> value="BMZ">BMZ</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s12") echo "checked";?> value="BY">BY</div> 
+    	</div> 
+    	<div class="partFormPark2">
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s13") echo "checked";?> value="D4">D4&nbsp; &nbsp;&nbsp;</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s14") echo "checked";?> value="S">S &nbsp; &nbsp; &nbsp;</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s15") echo "checked";?> value="WL4">WL4</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s16") echo "checked";?> value="WR4">WR4</div> 
+			<div> <input type="radio" name="gender" <?php if (isset($gender) && $gender=="s17") echo "checked";?> value="">All</div> 
+    	</div>  <!--  partFormPark2 --> 
+					
+        <!-- <span class="tRed">* МОЛЯ ИЗБЕРЕТЕ !!! <?php echo $genderErr;?></span>   -->
+				
+		<div class="Vagon">                    
+         	<label for="vags">Вагон №</label>
+            <input type="text" size="8" name="vags" id="vags" value="<?php echo($vag);?>"> 
+        </div>  <!-- partFormPark1 --> 
+        		
+        <div class="buttonFnContainer"> 
+        	<input class="btnFn" type="submit" name="action" value="Покажи">
+        	<button class="btnFn Export" id="btnExport" onclick="fnExcelReport();"> EXPORT </button>   
+        	<!-- <iframe></iframe> -->
+		<a href="./AdminVag.html"><button class="btnFn" name="izh" type="submit" formaction="AdminVag.html">Изход</button></a>
+    	</div>  <!--buttonFnContainer -->
+		<!-- <a href="./AdminVag.html" id="smlBTN"><button class="btnFn"  name="izh" type="submit" formaction="AdminVag.html">Изход</button></a> -->
+
+		</div>  <!--formline--> 
+	
+	    <!-- <?php if ($prava >=14){ ?>  ако има право на корекции да се появява и формата за корекции formLineZap--> 
+		<div id="NewformLineZap">
+	    <div class="wrapper">  
+		    <!--<script language='javascript'> ClearFlds(); </script> --> <!--Изтрива полетата за запис 	 -->
+		    <div><label for="fld1s">Вагон №</label>			<input type="text" name="fld1s" id="fld1s" value="<?php echo($fld1);?>"></div>
+			<div><label for="fld2s">Вагон</label>			<input type="text" name="fld2s" id="fld2s" value="<?php echo($fld2);?>"></div>
+			<div><label for="fld3s">Серия</label>			<input type="text" name="fld3s" id="fld3s" value="<?php echo($fld3);?>"></div> 
+			<div><label for="fld4s">Тип</label>				<input type="text" name="fld4s" id="fld4s" value="<?php echo($fld4);?>"></div>
+			<div><label for="fld5s">Депо Код</label>		<input type="text" name="fld5s" id="fld5s" value="<?php echo($fld5);?>"></div>
+			<div><label for="fld6s">Депо Име</label>		<input type="text" name="fld6s" id="fld6s" value="<?php echo($fld6);?>"></div>
+			<div><label for="fld7s">Собств.</label>			<input type="text" name="fld7s" id="fld7s" value="<?php echo($fld7);?>"></div>
+			<div><label for="fld8s">Завод</label>			<input type="text" name="fld8s" id="fld8s" value="<?php echo($fld8);?>"></div> 
+			<div><label for="fld9s">Дата Произв.</label>	<input type="text" name="fld9s" id="fld9s" value="<?php echo($fld9);?>"></div>
+			<div><label for="fld10s">Дата Модерн.</label>	<input type="text" name="fld10s" id="fld10s" value="<?php echo($fld10);?>"></div> 
+			<div><label for="fld11s">Дата БДЖ</label>		<input type="text" name="fld11s" id="fld11s" value="<?php echo($fld11);?>"></div>
+			<div><label for="fld12s">Тара</label>			<input type="text" name="fld12s" id="fld12s" value="<?php echo($fld12);?>"></div>
+			<div><label for="fld13s">База</label>			<input type="text" name="fld13s" id="fld13s" value="<?php echo($fld13);?>"></div>  
+        </div>  <!-- wrapper --> 
+
+        <div class="buttonFnContainer"> 
+            <button class="btnFn" id="btnExport" onclick="fnExcelReport();"> EXPORT </button>  
+			<input class="btnFn" type="submit" name="action" value="Изтрий">
+		</div>   <!--Край на formLineZap -->
+		</div>
+				
+		<div id="NewformLineZap">
+		<div class="wrapper">  
+			<div><label for="fld14s">Дължина</label>		<input type="text" name="fld14s" id="fld14s" value="<?php echo($fld14);?>"></div>
+			<div><label for="fld15s">Дължина</label>		<input type="text" name="fld15s" id="fld15s" value="<?php echo($fld15);?>"></div>
+			<div><label for="fld16s">Осветление</label>		<input type="text" name="fld16s" id="fld16s" value="<?php echo($fld16);?>"></div> 
+			<div><label for="fld17s">Отопление</label>		<input type="text" name="fld17s" id="fld17s" value="<?php echo($fld17);?>"></div>
+			<div><label for="fld18s">Спирачка</label>		<input type="text" name="fld18s" id="fld18s" value="<?php echo($fld18);?>"></div>
+			<div><label for="fld19s">Талига</label>			<input type="text" name="fld19s" id="fld19s" value="<?php echo($fld19);?>"></div> 
+			<div><label for="fld20s">Колооси</label>		<input type="text" name="fld20s" id="fld20s" value="<?php echo($fld20);?>"></div> 
+			<div><label for="fld21s">Скорост</label>		<input type="text" name="fld21s" id="fld21s" value="<?php echo($fld21);?>"></div>
+			<div><label for="fld22s">Макс. Скорост</label>	<input type="text" name="fld22s" id="fld22s" value="<?php echo($fld22);?>"></div> 
+			<div><label for="fld23s">Купета</label>			<input type="text" name="fld23s" id="fld23s" value="<?php echo($fld23);?>"></div>
+			<div><label for="fld24s">Места</label>			<input type="text" name="fld24s" id="fld24s" value="<?php echo($fld24);?>"></div> 
+			<div><label for="fld25s">Дата Ревизия</label>	<input type="text" name="fld25s" id="fld25s" value="<?php echo($fld25);?>"></div> 
+			<div><label for="fld26s">Флаг</label>			<input type="text" name="fld26s" id="fld26s" value="<?php echo($fld26);?>"></div>
+			<div><label for="fld27s">Забележка</label>		<input type="text" name="fld27s" id="fld27s" value="<?php echo($fld27);?>"></div>
+			<div><label for="fld28s">Потребител</label>		<input type="text" name="fld28s" id="fld28s" value="<?php echo($fld28);?>"></div> 
+        </div>  <!-- wrapper -->
+
+		<div class="buttonFnContainer">
+            <input class="btnFn" id="btnZapis" type="submit" name="action" value="Запис">                                
+            <input class="btnFn" type="submit" name="action" value="Нов Запис" onclick="ClearFlds()">
+        </div>   <!--Край на formLineZap -->
+		</div>
+
+		 <!--</div> Край на formLineZap--> 
+			
+	<!--<?php  }  //ако има право на корекции да се появява и формата за корекции formLineZap -->  
+	    
+	<!--    if ($flagDel == 1) { ?>    
+    	    <div class="logspaceparent">
+            	<div class="space" id="sps" >     
+            		<p class = "txtCBRed"  style="position:relative; top: 5%; " > ВНИМАНИЕ!!!</p>
+            	    <p class = "txtCBRed"  style="position:relative; top: 6%; " > ЗАПИСЪТ ЩЕ СЕ ИЗТРИЕ!!!</p>
+            	    <div class = "txtC" style="position:relative; top:7%;  " >
+                		<div class="buttonFnContainer" style="justify-content:center;">
+                		    <input class = "btnIn" style="height:30px;" type="submit" name="action" value="ДА">
+                		    <input class = "btnIn" style="height:30px;" type="submit" name="action" value="ОТКАЗ">
+                	    </div>   
+            	    </div>   
+                </div>
+            </div>
+        <?php }  ?>--> 
+    </form> <!--Край на Form-->
+    <!-- ********************************************************* Форма за заявка ******************************************************* -->
+        
+        <!--  **************************  Таблица с резултатите **********************--> 
+        <div id="bottomScreen">
+            <!--**********************************************  Заглавие на таблица ******************************** -->
+
+		<div class="bottomName"> 
+			<span class="TXT">Заглавие: echo($txtPrk)<hr></span> 
+		</div>
+			
+			<!-- <?php
+			$brojPrk = count( $aPrk);  
+			echo("<div class=\"bottomName\"> <SPAN CLASS = \"TXT\"> "); echo("brojPrk=".$brojPrk.", vag=".$vag.", sas=".$sas.", ser=".$ser.", 
+				zajpk=".$zajpk."<hr>"); echo("</SPAN> </div>");
+		    if ($txtPrk!="") {echo("<div class=\"bottomName\"> <SPAN CLASS = \"TXT\"> "); echo($txtPrk."<hr>"); echo("</SPAN> </div>"); }
+		    if ($txtZaj!="") {echo("<div class=\"bottomName\"> <SPAN CLASS = \"TXT\"> "); echo($txtZaj."<hr>"); echo("</SPAN> </div>"); }
+		    if ($txtDel!="") {echo("<div class=\"bottomName\"> <SPAN CLASS = \"TXT\"> "); echo($txtDel."<hr>"); echo("</SPAN> </div>"); }  
+		    ?>-->
+		    <!--**********************************************  Заглавие на таблица ******************************** -->
+		    
+		    <!--**********************************************  Извеждане на данните в таблица ******************************** -->
+		    <!-- <font size="11" face="Arial">       Arial  Courier New -->
+		<table id="DataTableId" cellspacing="0" cellpadding="1" border="1"> 
+		<thead> <!--Заглавен ред на таблицата  -->
+		<tr>
+			<th>№</th>
+			<th>Вагон №</th>
+			<th>Вагон</th>
+    		<th>Серия</th>
+    		<th>Тип	</th>
+    		<th>Депо Код</th>	
+    		<th>Депо Име</th>
+    		<th>Собствен.</th>	
+    		<th>Завод</th>	
+    		<th>Дата Произв.</th>	
+    		<th>Дата Модерн.</th>
+    		<th>Дата БДЖ</th>
+    		<th>Тара</th>
+			<th>База</th>
+			<th>Дължина</th>
+			<th>Дължина</th>
+			<th>Осветление</th>
+			<th>Отопление</th>
+			<th>Спирачка</th>
+			<th>Талига</th>
+			<th>Колооси</th>
+			<th>Скорост</th>
+			<th>Макс. Скорост</th>
+			<th>Купета</th>
+			<th>Места</th>
+			<th>Дата Ревизия</th>
+			<th>Флаг</th>
+			<th>Забележка</th>
+			<th>Потребител</th>
+		</tr>
+		</thead>  
+		<tbody>
+		<tr>   
+        	<td align="center"><!--?php echo($i+1)?--></td>
+			<td>515270715136</td>
+        	<td>70715136</td>
+        	<td>7071</td>
+        	<td >S</td>				
+        	<td>101</td>
+        	<td>ППП СОФИЯ</td>
+        	<td>БДЖ-ПП ЕООД</td>
+        	<td>VEB-GORLITZ- ГЕРМАНИЯ</td>
+        	<td>1975-10-30</td>
+        	<td>1975</td> 
+        	<td>2002</td>
+        	<td>45000</td>
+			<td>17200</td>
+			<td>23200</td>
+			<td>24500</td>
+			<td>ФАГА</td>
+			<td>КОНВЕНЦИОНАЛНО</td>
+			<td>КАЛОДКОВА</td>
+			<td>ГЪОРЛИЦ- V</td>
+			<td>БЕЗБАНДАЖНИ</td>
+			<td>140</td>
+			<td>160</td>
+			<td>10</td>
+			<td>30</td>
+			<td>22.12.2010</td>
+			<td>0</td>
+			<td>Изтекла ревизия</td>
+			<td>1999</td>
+		</tr>
+				
+    <!--   <?php if ($brojPrk >0) { 
+		$i = 1; 
+			while ($i <= $brojPrk ) {
+			?>   
+		<tr style=font-size:14px; >   
+        	<td  align="center"> <?php echo($i+1); ?> </td>
+        	<td  class="bcgrZ" align="center"> <?php echo($aPrk[$i][0]); ?> </td>	
+        	<td><?php echo($aPrk[$i][1]); ?></td> 	
+        	<td><?php echo($aPrk[$i][2]); ?></td> 	    
+        	<td><?php echo($aPrk[$i][3]); ?></td>			
+        	<td><?php echo($aPrk[$i][4]); ?></td>     
+        	<td><?php echo($aPrk[$i][5]); ?></td>      
+        	<td><?php echo($aPrk[$i][6]); ?></td>    
+        	<td><?php echo($aPrk[$i][7]); ?></td> 	   
+        	<td><?php echo($aPrk[$i][8]); ?></td>  	
+        	<td><?php echo($aPrk[$i][9]); ?></td>  	
+        	<td><?php echo($aPrk[$i][10]); ?></td>  
+        	<td><?php echo($aPrk[$i][11]); ?></td>  	
+			<td><?php echo($aPrk[$i][12]); ?></td>
+			<td><?php echo($aPrk[$i][13]); ?></td>
+			<td><?php echo($aPrk[$i][14]); ?></td>
+			<td><?php echo($aPrk[$i][15]); ?></td>
+			<td><?php echo($aPrk[$i][16]); ?></td>
+			<td><?php echo($aPrk[$i][17]); ?></td>
+			<td><?php echo($aPrk[$i][18]); ?></td>
+			<td><?php echo($aPrk[$i][19]); ?></td>
+			<td><?php echo($aPrk[$i][20]); ?></td>
+			<td><?php echo($aPrk[$i][21]); ?></td>
+			<td><?php echo($aPrk[$i][22]); ?></td>
+			<td><?php echo($aPrk[$i][23]); ?></td>
+			<td><?php echo($aPrk[$i][24]); ?></td>
+			<td><?php echo($aPrk[$i][25]); ?></td>
+			<td><?php echo($aPrk[$i][26]); ?></td>
+			<td><?php echo($aPrk[$i][27]); ?></td>
+		</tr>
+    
+	<?php $i++;
+	}	
+    }  ?> -->
+                
+		</tbody>
+		</table> 
+		    <!-- </font> -->
+    </div>  <!-- Край на bottomScreen -->
+        
+        <!--?php   mysql_close($connect); ?-->	
+
+        <script>
+        var table = document.getElementById('DataTableId');
+        for(var i = 1; i < table.rows.length; i++){
+                
+            table.rows[i].onclick = function(){
+                //rIndex = this.rowIndex;
+                document.getElementById("fld1s").value = this.cells[1].innerHTML;
+                document.getElementById("fld2s").value = this.cells[2].innerHTML;
+                document.getElementById("fld3s").value = this.cells[3].innerHTML;
+                document.getElementById("fld4s").value = this.cells[4].innerHTML;
+                document.getElementById("fld5s").value = this.cells[5].innerHTML;
+                document.getElementById("fld6s").value = this.cells[6].innerHTML;
+                document.getElementById("fld7s").value = this.cells[7].innerHTML;
+                document.getElementById("fld8s").value = this.cells[8].innerHTML;
+                document.getElementById("fld9s").value = this.cells[9].innerHTML;
+                document.getElementById("fld10s").value= this.cells[10].innerHTML;
+                document.getElementById("fld11s").value= this.cells[11].innerHTML;
+                document.getElementById("fld12s").value= this.cells[12].innerHTML;
+				document.getElementById("fld13s").value = this.cells[13].innerHTML;
+				document.getElementById("fld14s").value = this.cells[14].innerHTML;
+				document.getElementById("fld15s").value = this.cells[15].innerHTML;
+				document.getElementById("fld16s").value = this.cells[16].innerHTML;
+				document.getElementById("fld17s").value = this.cells[17].innerHTML;
+				document.getElementById("fld18s").value = this.cells[18].innerHTML;
+				document.getElementById("fld19s").value = this.cells[19].innerHTML;
+				document.getElementById("fld20s").value = this.cells[20].innerHTML;
+				document.getElementById("fld21s").value = this.cells[21].innerHTML;
+                document.getElementById("fld22s").value = this.cells[22].innerHTML;
+                document.getElementById("fld23s").value = this.cells[23].innerHTML;
+                document.getElementById("fld24s").value = this.cells[24].innerHTML;
+                document.getElementById("fld25s").value = this.cells[25].innerHTML;
+                document.getElementById("fld26s").value = this.cells[26].innerHTML;
+                document.getElementById("fld27s").value = this.cells[27].innerHTML;
+            };
+        }
+        </script>
+    
+</main>
+
+<footer>
+	
+</footer>
+
+
+</body>
+</html>

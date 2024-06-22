@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/plista.css">
+	<title>Excel--&gt;ParkVag</title>
+</head>
+
+<body>
+	<header>
+		<img src="./Pics/Vag1 (1).jpg">
+	    <form id="form" name="form" action="<?php $self ?>" method="post">     <!--  ФОРМА  -->	   
+	    
+	    <!-- ********************************************************* Заглавна част *******************************************************-->  
+    	<div id="HeadlineWrapper">  <!-- /* ЛИНИЯ ПОД header-БАННЕР */ -->  
+			<span>"БДЖ-ПЪТНИЧЕСКИ ПРЕВОЗИ" ЕООД</span>     		
+			<span>ПРЕХВЪРЛЯНЕ ДАННИ ОТ EXCEL в ParkVag</span> 
+			<form id="form" name="form" action="<?php $self ?>" method="post">     <!--  ФОРМА  -->	</form>	
+        	<div class="HeadlineUsername" name="potr" id="potr">
+			<span class="user">Потребител: Име на потребителя <!--?php echo($ime);?--></span>
+			<img src="./Pics/linia2.jpg" alt="linia2">
+    	</div><!-- HeadlineWrapper  -->  
+	</header>
+
+        <!--  ********************************************************* Заглавна част *******************************************************-->     
+    
+    	    <!-- ********************************************************* Форма за заявка *******************************************************--> 
+<main>
+    <div id="formline" class="formlinebtn">  
+    <div class="FormLineWrapper toPark"> 
+        <label for="fld1s">Loko</label>	<input type="text" name="fld1s" id="fld1s" value="<?php echo($filename);?>"> 
+        <input class="btnFn Submit" type="submit" name="action" value="Прехвърли">
+        <a href="./AdminVag.html"><button class="btnFn" name="izh" type="submit" formaction="./AdminVag.html">Изход</button></a>	
+    </div><!-- FormLineWrapper  -->  
+    </div><!-- formline  -->  
+        
+    <!-- ************************************************  Таблица с резултатите ********************************* -->
+    <div id="bottomScreen">
+        
+        <!--**********************************************  Извеждане на данните в таблица ******************************** -->
+        <div class="bottomName"><span class="TXT">  <br> Заявка1: <!--?php echo($zaiavka);?--><br>  </span> </div> 
+        
+        <!--**********************************************  Извеждане на данните в таблица ******************************** -->
+		<!-- <font size="11" face="Arial">       Arial  Courier New -->
+	<table id="DataTableId" cellspacing="0" cellpadding="1" border="1"> 
+	<thead> <!--Заглавен ред на таблицата  -->
+		<th>№</th>
+		<th>Вагон №</th>
+		<th>Вагон</th>
+		<th>Серия</th>
+		<th>Тип</th>
+    	<th>Депо Код</th>
+		<th>Депо Име</th>
+    	<th>Собств.</th>
+    	<th>Завод</th>	
+    	<th>Дата Произв.</th>
+    	<th>Дата Модиф.</th>	
+    	<th >Дата БДЖ</th>
+		<th>Тара</th>
+		<th>База</th>
+		<th>Дължина</th>
+		<th>Дължина</th>
+		<th>Осветление</th>
+		<th>Отопление</th>
+		<th>Спирачка</th>
+		<th>Талига</th>
+		<th>Колооси</th>
+		<th>Скорост</th>
+		<th>Макс. Скорост</th>
+		<th>Купета</th>
+		<th>Места</th>
+    	<th>Дата Ревизия</th>	
+		<th>Флаг</th>	
+    	<th>Забележка</th>
+    	<th>Потребител</th>		
+	</thead>
+	<tbody>
+	<tr>   
+        <td align="center"><!--?php echo($i+1)?--></td>
+		<td>515270715136</td>
+        <td>70715136</td> 	
+        <td>7071</td> 	   
+        <td>S</td>		 					
+        <td>101</td>      	
+        <td>ППП СОФИЯ</td>      	
+        <td>БДЖ-ПП ЕООД</td>     
+        <td>VEB-GORLITZ- ГЕРМАНИЯ</td> 	   
+        <td>1975-10-30</td>  		
+        <td>1975</td>  	
+        <td>2002</td>  		
+        <td>45000</td>  
+		<td>17200</td>
+		<td>23200</td>
+		<td>24500</td>
+		<td>ФАГА</td>
+		<td>КОНВЕНЦИОНАЛНО</td>
+		<td>КАЛОДКОВА</td>
+		<td>ГЪОРЛИЦ- V</td>
+		<td>БЕЗБАНДАЖНИ</td>
+		<td>140</td>
+		<td>160</td>
+		<td>10</td>
+		<td>30</td>
+		<td>22.12.2010</td>
+		<td>0</td>
+		<td>Изтекла ревизия</td>
+		<td>1999</td>
+	</tr>
+	<!--  <?php for ($i = 0; $i <= 5; $i++) { ?>-->
+    <tr>   
+        <td align="center"><!--?php echo($i+1)?--></td>
+        <td class="bcgrZ" align="center"><!--?php echo($aPrk[$i][0])?--> </td>	
+        <td><!--?php echo($aPrk[$i][1])?--> </td> 		
+        <td><!--?php echo($aPrk[$i][2])?--> </td> 	    
+        <td><!--?php echo($aPrk[$i][3])?--> </td>		 					
+        <td><!--?php echo($aPrk[$i][4])?--> </td> 	
+        <td><!--?php echo($aPrk[$i][5])?--> </td>      	
+        <td><!--?php echo($aPrk[$i][6])?--> </td>      	
+        <td><!--?php echo($aPrk[$i][7])?--> </td> 	   
+        <td><!--?php echo($aPrk[$i][8])?--> </td>
+        <td><!--?php echo($aPrk[$i][9])?--> </td>  		
+        <td><!--?php echo($aPrk[$i][10])?--></td>  	
+        <td><!--?php echo($aPrk[$i][11])?--></td>
+		<td><!--?php echo($aPrk[$i][12])?--></td>
+		<td><!--?php echo($aPrk[$i][13])?--></td>
+		<td><!--?php echo($aPrk[$i][14])?--></td>
+		<td><!--?php echo($aPrk[$i][15])?--></td>
+		<td><!--?php echo($aPrk[$i][16])?--></td>
+		<td><!--?php echo($aPrk[$i][17])?--></td>
+		<td><!--?php echo($aPrk[$i][18])?--></td>
+		<td><!--?php echo($aPrk[$i][19])?--></td>
+		<td><!--?php echo($aPrk[$i][20])?--></td>
+		<td><!--?php echo($aPrk[$i][21])?--></td>
+		<td><!--?php echo($aPrk[$i][22])?--></td>
+		<td><!--?php echo($aPrk[$i][23])?--></td>
+		<td><!--?php echo($aPrk[$i][24])?--></td>
+		<td><!--?php echo($aPrk[$i][25])?--></td>
+		<td><!--?php echo($aPrk[$i][26])?--></td>
+		<td><!--?php echo($aPrk[$i][27])?--></td>
+		<!--<?php } ?>-->
+	</tr>
+	</tbody>
+	</table>  
+    </font>
+    </div>  <!--Край на bottomScreen -->
+    
+    </div><!--Край на container -->
+</main>
+<footer>
+</footer>
+</body>
+</html>

@@ -1,0 +1,279 @@
+@import url('typography.css');
+/* @import url('plista.css'); */
+/* @import url('park.css'); */
+@import url('smlscr.css'); 
+
+/* ---------------------------------------------------------------------------- */
+/*Индекс*/
+/* ---------------------------------------------------------------------------- */
+
+header {	/* ЗАГЛАВИЕ */ 
+	align-items: center; 
+	color: #2742d1; 
+	display: flex;
+	font-family: "Times New Roman", Times, serif; 
+	font-size: 1.9vw;
+	font-weight: 900; 
+	height: 6%;
+	justify-content: center; 
+	margin: 0px;	
+	text-align: center;
+}
+
+header > img {	 
+	height: 22vh;
+	width: 98%;
+	margin-left: 1%;
+}	
+
+#HeadlineWrapper {
+	color: #2742d1;
+	font-size: calc(1.1vw + 6px);
+	font-weight: 600;
+	display: flex;
+	margin: 1.5% 0;
+}
+
+#HeadlineWrapper > span:first-child{
+	width: 35%;
+	margin-left: 1%;
+}
+#HeadlineWrapper > span:nth-child(2){
+	width: 20%;
+}
+
+.HeadlineUsername { /* ПОЛЕ ЗА ПОТРЕБИТЕЛ */	
+	font-weight: 400;
+	width: 35%;
+}
+
+.user{
+	margin-left: 30%;
+}
+
+.btnFn {   		
+	background-color: #53c4f9;	
+	background-image : 
+		linear-gradient(rgb(17,136,191),
+		rgb(118,207,248)50%, 
+		rgb(118,207,248)50%,
+		rgb(17,136,191)100%);
+    	border: none;
+	box-shadow: 3px 3px 2px #333;
+	box-sizing: border-box;
+	cursor: pointer; 
+	font: italic bold 14px Georgia, serif;
+    	font-size: calc(1vw + 6px);
+    	text-align: center;
+	text-shadow : 0 0 1px black; 
+	align-items: center; 
+	display: flex; 
+	justify-content: center; 	
+	min-width: 80px;	
+	color: #124075;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.btnFn:hover { /* Бутон изход АКТИВЕН - Loko, WStatPL */
+	background-color: #fbb25c;
+background-image: 
+	linear-gradient(rgb(17,100,191),
+	rgb(118,207,248)50%, 
+	rgb(118,207,248)50%,
+	rgb(17,100,191)100%);
+}
+
+/* MAIN */
+main {
+	display: flex;
+	flex-direction: row;
+	box-shadow: -2px -2px 8px 3px rgba(0,0,0,.1);
+	display: flex;
+	grid-gap: 1%;
+	height: 80%;
+	position: sticky;			
+}
+
+.leftScreen {  	
+	align-items: center;
+	display: flex;
+	flex-direction: column; 
+	flex-grow: 0;
+ 	float: left;
+	grid-gap: 1%;
+	height: auto;
+	justify-content: center;		
+	position: relative;
+	width: 15%;	 		
+}	
+
+.leftScreen > img {
+	height: 12%;  
+	justify-content: center;
+}
+
+.TXT { 
+	color: #154d8c;
+	font-size: calc(0.6vw + 6px);     
+	margin: 0 auto; 	
+	align-items: center;
+	display: flex; 
+	flex-grow: 0;
+	flex-shrink: 1;
+	font-family: "times new roman", times, serif;
+	font-weight: 600; 
+	height: 7%;  
+	justify-content: center;	
+	margin: 0 5px;
+	width: 90%;		
+}
+
+.menuIndex{
+	align-items: center;
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	align-content: center;
+	box-sizing: border-box;
+	grid-gap: 5%;
+	box-shadow: 2px 2px 8px 3px rgba(0,0,0,.1);
+	display: flex; 		
+	flex: 1 0 auto;		
+	font-family: "Times New Roman", Times, serif; 	
+	width: 100%; 	
+}
+
+ul { 	/* СТИЛ НА СПИСЪК В БЛОК С МЕНЮ */ 
+	align-items: center; 
+	display: flex;
+	flex: 1 0 auto;	
+	flex-direction: column; 
+	grid-gap: 5%;  
+	list-style: none;
+   	margin-block-end: 1em;
+	margin-block-start: 1em;
+	margin-top: 2%;
+	padding: 0;	    
+	width: 100%;  	
+}
+
+.btnMenu { /* Бутони от менюто с бутоните  */		
+	align-items: center; 	
+	background-color: #53C4F9;	
+	background-image : 
+		linear-gradient(rgb(17,136,191),
+		rgb(118,207,248)50%,
+		rgb(118,207,248)50%,
+		rgb(17,136,191)100%);
+    	border: none;
+	box-shadow: 3px 3px 2px #333;
+	color: #124075;
+	cursor: pointer;
+	display: flex;  
+	font: italic bold 22px Georgia, serif;
+    font-size: calc(1VW + 4px);
+	justify-content: center;
+	height: 35px; 
+	width : 80%; 
+	border-radius: 15px;
+	
+}
+
+.btnMenu > a{
+	text-decoration: none;
+}
+
+.btnMenu:hover { /* ПРИ АКТИВИРАНЕ Бутони от менюто с */
+    	background-color: #fbb25c;
+	background-image: 
+		linear-gradient(rgb(17,100,191),
+		rgb(118,207,248)50%, 
+		rgb(118,207,248)50%,
+		rgb(17,100,191)100%);
+}
+
+.logspace {	/* екран за логване  */
+	background-color: #5cb8ee;
+ 	border-style: ridge;
+	color: #124075;
+	font-size: 16px;
+	height: 230px;
+ 	position: absolute;	 
+	left: 40%; top: 30%;
+	width : 400px;
+	z-index: 100; 	
+	align-items: center; 
+ 	display: flex; 
+	flex-direction: column;
+}	
+
+.logspace > p {
+	line-height: 2em;
+}
+
+.logspace > p:first-child {
+	color: rgb(38,81,122);
+	font-weight: 800;
+	font-size: larger;
+}
+
+.logspace > p:nth-child(2) {
+	color: rgb(248,7,0);
+	padding-bottom: 20px;
+	font-weight: 800;
+	font-size: large;
+}
+
+.logspace > form > div:first-child{
+	padding-bottom: 10px;
+}
+
+.logspace > form > div:nth-child(2){
+	padding-bottom: 30px;
+	text-align: ;
+}
+
+.logspace > form > div:nth-child(4){
+	text-align: center;
+}
+
+.btnIn {   /* Бутон от екрана за логване вход - Loko */	
+	background-color: #53C4F9;	
+	background-image: 
+		linear-gradient(rgb(17,136,191),
+		rgb(118,207,248)50%, 
+		rgb(118,207,248)50%,
+		rgb(17,136,191)100%);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 3px 3px 2px #333;
+	color: #124075;
+	text-align: center;
+	cursor: pointer;
+	font: italic bold 26px Georgia, serif;
+	font-size: 80%;
+	height: 12%;
+	width : 20%; 
+}	
+
+.btnIn:hover {
+	background-color: #fbb25c;
+	background-image: 
+		linear-gradient(rgb(17,100,191),
+		rgb(118,207,248)50%, 
+		rgb(118,207,248)50%,
+		rgb(17,100,191)100%);
+}
+
+#rightScreen { 	/*  ОСНОВЕН ЕКРАН */ 	
+	/* display: flex; 	 
+	flex: 1 1 auto;
+	flex-direction: column; 
+	flex-grow: 4; 
+	grid-gap: 1%;*/
+	height: 100%;
+	box-shadow: -2px -2px 8px 3px rgba(0,0,0,.1);
+	font-family: "Times New Roman", Times, serif; 
+	justify-content: center; 
+}	

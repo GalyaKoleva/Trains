@@ -1,0 +1,210 @@
+
+/* ---------------------------------------------------------------------------- */
+/* ОБЩИ ЧАСТИ СТРАНИЦИ */
+/* ---------------------------------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #A7DEFD; 
+	scrollbar-color: #5cb8ee #A7DEFD; 
+	scrollbar-width: thin;	
+	font-family: "Times New Roman", Times, serif; 
+	color: #2742d1;
+}   
+
+html {
+	font-size: calc(1.1vw + 8px);
+}
+
+h1 {font-size: 2.65em;}
+h2 {font-size: 2.1em;}
+h3 {font-size: 1.75em;}
+h4 {font-size: 1.45em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+.txtL { text-align: left; }
+.txtC { text-align: center; }
+.txtR { text-align: right; }
+.txtJ {  text-align: justify;}
+.tbold{ font-weight: bold; }
+.tRed { color: #FF0000; }
+.tLil { color: #B301C8; }
+.tblu { color: #2742d1; }
+.tdsmall { font-size: 9px; }
+.tS9 { font-size: 9px;}
+.tS12{ font-size: 12px;}
+.tS16{ font-size: 16px;}
+.tS18{ font-size: 18px;}
+.tS22{ font-size: 22px;}
+.tS30{ font-size: 30px;}
+.tS20v{ font-size: 20vw;}
+
+.txtCB	  { text-align: center; font-weight: bold;}
+.txtCRed  { text-align: center; color: #FF0000; }
+.txtBRed  { font-weight: bold; color: #FF0000;}
+.txtCBRed { text-align: center; font-weight: bold; color: #FF0000;}
+.bigRed   { text-align: center; font-weight: bold; color: #FF0000;  font-size: 30px;}
+.bigBlu   { text-align: center; font-weight: bold; color: #2742d1;  font-size: 30px;}
+
+.bcgrZ {background-color: #9ED3F1;   /* #8CC8EA; #69C8FE;  #95E6EB; */  }  
+.bcgrP {background-color: #DCD2C8}	 /* ECE1C7 */
+.bcgrErr {background-color: #E1EB47;}
+
+.leftPartMid ul::-webkit-scrollbar-track {background-color: green;}
+.leftPartMid::-webkit-scrollbar-thumb {background-color: green;}
+/* не работят стилове за скроллер */
+#clear { clear: both; }
+
+
+.rightScreen{
+    display: none;
+}
+
+body{
+    /* background: url("../Pics/uriel-soberanes-jg4E9uUXxqU-unsplash.jpg"); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {	/* ЗАГЛАВИЕ */ 
+	font-weight: 900; 	
+    background: #A7DEFD;
+    padding: 1px;
+    text-align: center;
+}
+/* 
+header > img {	 
+	height: 22vh;
+	width: 98%;
+	margin-left: 1%;
+}	
+*/
+#HeadlineUsername > img{
+    display: none;
+}
+
+#HeadlineWrapper {
+	font-weight: 600;
+	display: flex;
+    flex-wrap: wrap;
+	margin: 1% 0;
+    align-items: center;
+}
+
+.btnFn {   
+	background-color: var(--btn-background);	
+    background-image: var(--btn-gradient);
+	box-shadow: var(--btn-shadow);
+    font: var(--btn-font);
+    color: var(--btn-color);
+    cursor: pointer; 
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    text-shadow : var(--btn-text-shadow);
+}
+
+.btnFn:hover { /* Бутон изход АКТИВЕН - Loko, WStatPL */
+	background-color: #fbb25c;
+    background-image: var(--btn-hover);
+}
+
+.btnFn.header { /* Бутони от менюто с бутоните  */		
+    padding: 10px;
+}
+
+.btnFn.menu { /* Бутони от менюто с бутоните  */		 
+    text-shadow: none;
+    font-size: 18px;	
+    padding: 10px 0;
+}
+
+.btnFn.menu > a{
+    text-decoration: none;
+}
+
+.btnFn.btnIn{    /* Бутон от екрана за логване вход - Loko */	
+    font: italic bold Georgia, serif;
+    text-align: center;
+    padding: 7px 30px;
+}	
+/* MAIN */
+.TXT { 
+	color: #154d8c; 
+    font-weight: 600;  
+	margin: 10px auto;  
+	width: 90%;	
+    text-align: center;	
+}
+
+.leftScreen {  	
+    background: #A7DEFD; 
+}
+
+ul{
+    list-style: none;
+    align-items: center;	     	
+}
+
+ul > li {
+    margin-top: 1em;
+}
+
+.leftScreen > img {  	 
+    width: 98%;	 
+}
+
+.logspace {	/* екран за логване  */
+    background-color: #5cb8ee;
+    border-style: ridge;
+    color: #124075;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.logspace > p:first-child {
+    color: rgb(38,81,122);
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.logspace > p:nth-child(2) {
+    color: rgb(248,7,0);
+    font-weight: 1000;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.logspace > form > div:first-child{
+    padding-bottom: 10px;
+}
+
+.logspace > form > div:nth-child(2){
+    font-size: 0.95em;
+    padding-bottom: 30px;
+}
+
+#usname, #psw{
+    height: 25px;
+}
+
+#rightScreen > img {
+   display: none;
+}
+
+footer{ 
+	background: #A7DEFD;
+	width: 100%; 	
+	height: 40px; 	
+	border:1px solid black;	
+}
+

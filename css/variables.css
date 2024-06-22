@@ -1,0 +1,16 @@
+html {
+    --btn-background: #53c4f9;
+    --btn-gradient : 
+    linear-gradient(rgb(17,136,191),
+		rgb(118,207,248)50%, 
+		rgb(118,207,248)50%,
+		rgb(17,136,191)100%);
+    --btn-shadow: 3px 3px 2px #333;
+    --btn-text-shadow: 0 0 1px black; 
+    --btn-font: italic bold 22px Georgia, serif;
+    --btn-color: #124075;
+    --btn-hover: linear-gradient(rgb(17,100,191),
+	    rgb(118,207,248)50%, 
+	    rgb(118,207,248)50%,
+	    rgb(17,100,191)100%);
+}

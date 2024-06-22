@@ -1,0 +1,26 @@
+@import url('typography.css');
+@import url('variables.css');
+/* @import url('plista.css'); */
+/* @import url('park.css');  */
+/* @import url('smlscr.css'); */
+@import url('smlscrv2.css'); 
+
+/* ---------------------------------------------------------------------------- */
+/*Индекс*/
+/* ---------------------------------------------------------------------------- */
+main{    
+    background-image: url('../Pics/uriel-soberanes-jg4E9uUXxqU-unsplash.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+footer{
+	background: black;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
